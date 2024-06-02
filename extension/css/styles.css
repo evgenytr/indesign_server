@@ -1,0 +1,93 @@
+:focus {outline:none;}
+
+body {
+text-align:left;
+overflow:auto;
+margin:0;
+padding:0;
+background-color:#191919;
+color:#ffffff;
+font-size: 12px;
+}
+
+p
+{
+
+}
+.logArea
+{
+    height:400px;
+}
+
+.loginFormRow
+{
+    clear:both;
+    margin:10px;
+}
+
+.loginFormRow.save button
+{
+    margin-top:40px;
+  
+}
+
+.folderPath
+{
+
+}
+
+.loginFormRow button, .loginFormRow p
+{
+    
+float:left;    
+}
+
+.settings .loginFormRow p
+{
+    line-height:20px;
+}
+
+.settings. loginFormRow button, .settings .loginFormRow.save button
+{
+    height:20px;
+    width:120px;
+    height:20px;
+    margin:4px;
+}
+
+.loginFormRow p
+{
+    line-height:40px;
+    
+}
+
+#content
+{
+	width:90%;
+	margin-left:10px;
+	margin-top:10px;
+    text-align:center;
+}
+
+#reload-button {
+  display: none;
+}
+
+
+button {
+  font-size: 105%;
+  border-radius: 10px;
+  width:120px;
+  height:40px;
+  margin-right:10px;
+}
+
+
+.hidden {
+    display:none;
+}
+
+.btn {
+    text-transform:none;
+    margin-top:10px;
+}

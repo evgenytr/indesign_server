@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="6.0" ExtensionBundleId="com.server.tradelabels" ExtensionBundleVersion="1.0.0"
+		ExtensionBundleName="TradeLabelsServer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="com.server.tradelabels" Version="1.8" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+            <Host Name="IDSN" Version="11.0" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>
+			<RequiredRuntime Name="CSXS" Version="6.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.server.tradelabels">
+			<DispatchInfo >
+				<Resources>
+				<MainPath>./index.html</MainPath>
+                 <ScriptPath>./jsx/jsxApp.jsx</ScriptPath>
+                <CEFCommandLine>
+                  <Parameter>--enable-nodejs</Parameter>
+                  <Parameter>--disable-application-cache</Parameter>
+                  <Parameter>--mixed-context</Parameter>
+                </CEFCommandLine>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+                    <StartOn>
+                     <Event>com.adobe.csxs.events.AppOnline</Event>
+                    </StartOn>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>TradeLabelsServer 1.0</Menu>
+					<Geometry>
+						<Size>
+							<Height>300</Height>
+							<Width>300</Width>							
+						</Size>
+						<MaxSize>
+							<Height>800</Height>
+							<Width>600</Width>	
+						</MaxSize>
+						<MinSize>
+							<Height>300</Height>
+							<Width>300</Width>	
+						</MinSize>						
+					</Geometry>
+					<Icons>
+						<Icon Type="Normal">./icons/iconNormal.png</Icon>
+						<Icon Type="RollOver">./icons/iconRollover.png</Icon>
+						<Icon Type="Disabled">./icons/iconDisabled.png</Icon>
+						<Icon Type="DarkNormal">./icons/iconDarkNormal.png</Icon>
+						<Icon Type="DarkRollOver">./icons/iconDarkRollover.png</Icon>
+					</Icons>						
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>
